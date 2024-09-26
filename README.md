@@ -26,7 +26,7 @@ Este é um projeto de encurtador de URLs construído com Fastify, TypeScript e P
 2. **Instale as dependências:**
 
    ```bash
-  npm install
+   npm install
 
 1. **Configure o banco de dados:**
    1. Crie um banco de dados PostgreSQL
