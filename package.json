@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "engines": {
-    "node": "18"
+    "node": "20"
   },
   "scripts": {
     "dev": "tsx src/server.ts",
-    "build":"tsup src/server.ts --out-dir dist",
-    "start": "npm run build && node dist/server.js"
+    "build":"tsup src/server.ts",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
