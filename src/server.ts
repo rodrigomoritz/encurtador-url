@@ -11,7 +11,7 @@ const start = async () => {
       host:'0.0.0.0',
       port: process.env.PORT ? Number(process.env.PORT):3333,
     }).then(() => {
-      console.log('Servidor rodando em http://localhost:3333');
+      console.log('Servidor rodando! 🚀');
     });
   } catch (err) {
     app.log.error(err);
