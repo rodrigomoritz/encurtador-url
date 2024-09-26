@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "tsx src/server.ts",
-    "build":"tsup src/server.ts",
+    "build": "tsup src/server.ts",
     "start": "node dist/server.js"
   },
   "keywords": [],
@@ -15,7 +15,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@types/node": "^22.7.2",
+    "@types/node": "^22.7.3",
     "prisma": "^5.20.0",
     "tsup": "^8.3.0",
     "tsx": "^4.19.1",
@@ -24,6 +24,7 @@
   "dependencies": {
     "@prisma/client": "^5.20.0",
     "fastify": "^5.0.0",
+    "nano": "^10.1.4",
     "nanoid": "^5.0.7"
   }
 }
