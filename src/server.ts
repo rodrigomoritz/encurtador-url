@@ -1,8 +1,17 @@
 import Fastify from 'fastify';
 import { urlRoutes } from './routes/urlRoutes';
+import cors from '@fastify/cors';
 
 const app = Fastify();
 
+app.register(cors, {
+  origin: (origin, cb) => {
+    cb(null, true);
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+});
 app.register(urlRoutes);
 
 const start = async () => {

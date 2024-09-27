@@ -1,7 +1,9 @@
 import { FastifyInstance } from 'fastify';
+
 import { createShortUrl, findOriginalUrl, getAllUrls } from '../services/urlService';
 
 export const urlRoutes = async (app: FastifyInstance) => {
+
   app.post('/api/url/shorten', async (request, reply) => {
     const { originalUrl } = request.body as { originalUrl: string };
 
@@ -14,12 +16,13 @@ export const urlRoutes = async (app: FastifyInstance) => {
   });
 
   app.get('/:shortUrl', async (request, reply) => {
+
     const { shortUrl } = request.params as { shortUrl: string };
 
     try {
       const url = await findOriginalUrl(shortUrl);
       if (url) {
-        reply.redirect(url.originalUrl);
+        return { originalUrl: url.originalUrl };
       } else {
         reply.status(404).send('URL não encontrada');
       }
