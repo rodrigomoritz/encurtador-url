@@ -48,7 +48,7 @@ Este é um projeto de encurtador de URLs construído com Fastify, TypeScript e P
    ```bash
    npm run build
 
-5. **Executando o prjeto**
+5. **Executando o projeto**
    ```bash
    npm run start
 
