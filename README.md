@@ -1,4 +1,4 @@
-# Encurtador de URL
+# Encurtador de URL - Backend
 
 Este é um projeto de encurtador de URLs construído com Fastify, TypeScript e Prisma. A aplicação permite que os usuários encurtem URLs longas, redirecionem para URLs encurtadas e visualizem todas as URLs encurtadas.
 
